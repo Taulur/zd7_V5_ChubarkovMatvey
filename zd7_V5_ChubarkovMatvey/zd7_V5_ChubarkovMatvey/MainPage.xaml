@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zd7_V5_ChubarkovMatvey.MainPage">
+    <ContentPage.Resources>
+        <StyleSheet Source="Style.css">
+        </StyleSheet>
+    </ContentPage.Resources>
+
+    <StackLayout Padding="35">
+        <Label Text="Добро пожаловать!"
+               FontSize="25"
+               FontAttributes="Bold"
+        HorizontalOptions="Center"
+        VerticalOptions="End" />
+
+        <Entry x:Name="usernameEntry"
+               Placeholder="Имя пользователя"
+               Keyboard="Text" />
+
+        <Entry x:Name="passwordEntry"
+               Placeholder="Пароль"
+               IsPassword="True" />
+
+
+        <Button x:Name="loginButton"
+                Text="Sign In"
+                Clicked="loginButton_Clicked"
+                TextTransform="None"/>
+
+       
+
+     
+    </StackLayout>
+</ContentPage>

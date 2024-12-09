@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zd7_V5_ChubarkovMatvey.Page2">
+    <StackLayout>
+        <Label Text="Информация по объектам недвижимости"
+               FontAttributes="Bold"
+               TextColor="Green"
+               HorizontalOptions="Center" />
+
+        <Label x:Name="nameLabel" Text="placeholder" />
+        <Label Text="placeholder" x:Name="priceLabel" />
+        <Label Text="placeholder" x:Name="roomsLabel" />
+        <Label Text="placeholder" x:Name="ownerLabel" />
+        <Label Text="placeholder" x:Name="adressLabel" />
+        <Label Text="placeholder" x:Name="descLabel" />
+        <Image x:Name="imageLabel" />
+
+        <Button Text="Расчет суммы оплаты"
+                Clicked="Calc" />
+        <Button Text="Вернутся к недвижимости"
+          Clicked="Back" />
+    </StackLayout>
+</ContentPage>

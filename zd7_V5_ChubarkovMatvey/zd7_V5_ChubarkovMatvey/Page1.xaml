@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zd7_V5_ChubarkovMatvey.Page1">
+    <StackLayout Padding="20">
+
+        <Label Text="Калькулятор суммы оплаты"
+               FontSize="24"
+               HorizontalOptions="Center"
+               TextColor="Blue" />
+
+        <Label Text="Выберите вид оплаты:"
+               FontSize="18" />
+
+        <Picker x:Name="paymentTypePicker"
+                Title="Вид оплаты"
+                SelectedIndexChanged="OnPaymentTypeChanged">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Наличный расчет</x:String>
+                    <x:String>Безналичный расчет</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Label Text="Введите срок оплаты (в днях):"
+               FontSize="18" />
+
+        <Entry x:Name="paymentTermEntry"
+               Keyboard="Numeric"
+               Placeholder="Срок оплаты в днях" />
+
+        <Label Text="Цена объекта:"
+               FontSize="18" />
+
+        <Label x:Name="priceEntry"
+               Text="placeholder" />
+
+        <Button Text="Рассчитать сумму"
+                Clicked="OnCalculateClicked" />
+
+        <Label x:Name="resultLabel"
+               FontSize="18"
+               TextColor="Green"
+               HorizontalOptions="Center" />
+
+    </StackLayout>
+</ContentPage>

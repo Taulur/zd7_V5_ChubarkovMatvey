@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zd7_V5_ChubarkovMatvey.Page3">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Онлайн-агентство недвижимости"
+               FontAttributes="Italic"
+               TextColor="Blue"
+               HorizontalOptions="CenterAndExpand" />
+                <Label Text="Вывод недвижимости на текущую дату"
+FontAttributes="Italic"
+TextColor="Red"
+HorizontalOptions="CenterAndExpand" />
+                <Label Text="placeholder"
+                       x:Name="dateLabel"
+FontAttributes="Italic"
+TextColor="Red"
+HorizontalOptions="CenterAndExpand" />
+
+                <StackLayout Orientation="Vertical">
+                    <Image Source="house1.jpg" HeightRequest="250" WidthRequest="250"></Image>
+                    <Label Text="Название : Пентхаус"></Label>
+                    <Label Text="Цена : 175000000"></Label>
+                    <Label Text="Комнаты : 9"></Label>
+                    <Button Text="Подробнее" Clicked="More1"></Button>
+                    <Button Text="Расчитать" Clicked="Calc1"></Button>
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Image Source="house2.jpg" HeightRequest="250" WidthRequest="250"></Image>
+                    <Label Text="Название : Мегахаус"></Label>
+                    <Label Text="Цена : 22000000"></Label>
+                    <Label Text="Комнаты : 7"></Label>
+                    <Button Text="Подробнее" Clicked="More2"></Button>
+                    <Button Text="Расчитать" Clicked="Calc2"></Button>
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Image Source="house3.jpg" HeightRequest="250" WidthRequest="250"></Image>
+                    <Label Text="Название : Нотбигхаус"></Label>
+                    <Label Text="Цена : 9000000"></Label>
+                    <Label Text="Комнаты : 5"></Label>
+                    <Button Text="Подробнее" Clicked="More3"></Button>
+                    <Button Text="Расчитать" Clicked="Calc3"></Button>
+                </StackLayout>
+
+
+                <Label Text="{Binding CurrentDate}" 
+               TextColor="Red" 
+               HorizontalOptions="Center" />
+
+              
+            </StackLayout>
+
+           
+
+        </ScrollView>
+
+
+      
+    </ContentPage.Content>
+</ContentPage>
